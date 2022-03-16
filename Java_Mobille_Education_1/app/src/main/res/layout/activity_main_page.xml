@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Page">
+
+    <TextView
+        android:id="@+id/hobi_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/yas_tw"
+        app:layout_constraintTop_toBottomOf="@+id/yas_tw" />
+
+    <TextView
+        android:id="@+id/ad_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/hobi_tw"
+        app:layout_constraintTop_toBottomOf="@+id/hobi_tw" />
+
+    <TextView
+        android:id="@+id/soyad_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/ad_tw"
+        app:layout_constraintTop_toBottomOf="@+id/ad_tw" />
+
+    <TextView
+        android:id="@+id/yas_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/parola_tw"
+        app:layout_constraintTop_toBottomOf="@+id/parola_tw" />
+
+    <TextView
+        android:id="@+id/parola_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_tw" />
+
+    <TextView
+        android:id="@+id/welcome_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/parola_tw"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/geri_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:onClick="button_click"
+        android:text="ÇIK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soyad_tw" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clickable="false"
+        android:longClickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geri_btn"
+        app:srcCompat="@drawable/sssss" />
+</androidx.constraintlayout.widget.ConstraintLayout>

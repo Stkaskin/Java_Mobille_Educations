@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Java_Mobille_Education_1">
         <activity
+            android:name=".Main_Page"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
